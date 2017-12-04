@@ -1,7 +1,4 @@
 ﻿Public Class Form1
-    Private intBeccaCount As Integer
-    Private intJamesCount As Integer
-    Private intReneeCount As Integer
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles picBecca.Click
         picBecca.Left = 25
@@ -10,6 +7,9 @@
     Private Sub btnGo_Click(sender As Object, e As EventArgs) Handles btnRace.Click
         Dim intCount1, intCount2, intCount3 As Integer
         Dim rand As New Random
+        Dim intBeccaCount As Integer
+        Dim intJamesCount As Integer
+        Dim intReneeCount As Integer
         Dim intScore As Integer = 1
         Dim intYouWin As Integer = 9
 
@@ -55,4 +55,5 @@
     Private Sub picRenee_Click(sender As Object, e As EventArgs) Handles picRenee.Click
         picRenee.Left = 25
     End Sub
+
 End Class
