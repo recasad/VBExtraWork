@@ -25,14 +25,14 @@ Partial Class Form1
         Me.btnRace = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.picAward = New System.Windows.Forms.PictureBox()
+        Me.lblWinning = New System.Windows.Forms.Label()
+        Me.picHappy = New System.Windows.Forms.PictureBox()
+        Me.picSad = New System.Windows.Forms.PictureBox()
         Me.radJames = New System.Windows.Forms.RadioButton()
         Me.radRenee = New System.Windows.Forms.RadioButton()
         Me.radBecca = New System.Windows.Forms.RadioButton()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.lblWinning = New System.Windows.Forms.Label()
-        Me.picAward = New System.Windows.Forms.PictureBox()
-        Me.picHappy = New System.Windows.Forms.PictureBox()
-        Me.picSad = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.picRenee = New System.Windows.Forms.PictureBox()
         Me.picJames = New System.Windows.Forms.PictureBox()
@@ -91,6 +91,47 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Bet on your favorite Casad"
         '
+        'picAward
+        '
+        Me.picAward.Image = Global.Moving_Things.My.Resources.Resources.Safety_Competition_Winner
+        Me.picAward.Location = New System.Drawing.Point(42, 111)
+        Me.picAward.Name = "picAward"
+        Me.picAward.Size = New System.Drawing.Size(180, 152)
+        Me.picAward.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picAward.TabIndex = 7
+        Me.picAward.TabStop = False
+        '
+        'lblWinning
+        '
+        Me.lblWinning.Font = New System.Drawing.Font("Magneto", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWinning.Location = New System.Drawing.Point(42, 234)
+        Me.lblWinning.Name = "lblWinning"
+        Me.lblWinning.Size = New System.Drawing.Size(167, 29)
+        Me.lblWinning.TabIndex = 9
+        Me.lblWinning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'picHappy
+        '
+        Me.picHappy.Image = Global.Moving_Things.My.Resources.Resources.IMG_3534
+        Me.picHappy.Location = New System.Drawing.Point(42, 111)
+        Me.picHappy.Name = "picHappy"
+        Me.picHappy.Size = New System.Drawing.Size(167, 152)
+        Me.picHappy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picHappy.TabIndex = 8
+        Me.picHappy.TabStop = False
+        Me.picHappy.Visible = False
+        '
+        'picSad
+        '
+        Me.picSad.Image = Global.Moving_Things.My.Resources.Resources.sad
+        Me.picSad.Location = New System.Drawing.Point(42, 111)
+        Me.picSad.Name = "picSad"
+        Me.picSad.Size = New System.Drawing.Size(167, 152)
+        Me.picSad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picSad.TabIndex = 6
+        Me.picSad.TabStop = False
+        Me.picSad.Visible = False
+        '
         'radJames
         '
         Me.radJames.AutoSize = True
@@ -131,47 +172,6 @@ Partial Class Form1
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(0, 19)
         Me.Label3.TabIndex = 1
-        '
-        'lblWinning
-        '
-        Me.lblWinning.Font = New System.Drawing.Font("Magneto", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWinning.Location = New System.Drawing.Point(42, 234)
-        Me.lblWinning.Name = "lblWinning"
-        Me.lblWinning.Size = New System.Drawing.Size(167, 29)
-        Me.lblWinning.TabIndex = 9
-        Me.lblWinning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'picAward
-        '
-        Me.picAward.Image = Global.Moving_Things.My.Resources.Resources.Safety_Competition_Winner
-        Me.picAward.Location = New System.Drawing.Point(42, 111)
-        Me.picAward.Name = "picAward"
-        Me.picAward.Size = New System.Drawing.Size(180, 152)
-        Me.picAward.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picAward.TabIndex = 7
-        Me.picAward.TabStop = False
-        '
-        'picHappy
-        '
-        Me.picHappy.Image = Global.Moving_Things.My.Resources.Resources.IMG_3534
-        Me.picHappy.Location = New System.Drawing.Point(42, 111)
-        Me.picHappy.Name = "picHappy"
-        Me.picHappy.Size = New System.Drawing.Size(167, 152)
-        Me.picHappy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picHappy.TabIndex = 8
-        Me.picHappy.TabStop = False
-        Me.picHappy.Visible = False
-        '
-        'picSad
-        '
-        Me.picSad.Image = Global.Moving_Things.My.Resources.Resources.sad
-        Me.picSad.Location = New System.Drawing.Point(42, 111)
-        Me.picSad.Name = "picSad"
-        Me.picSad.Size = New System.Drawing.Size(167, 152)
-        Me.picSad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picSad.TabIndex = 6
-        Me.picSad.TabStop = False
-        Me.picSad.Visible = False
         '
         'PictureBox1
         '
