@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{37312EB6-20FA-449E-9CEB-A2B7CEDC7F4A}</ProjectGuid>
+    <ProjectGuid>{C957ACE5-49C4-4B5C-899B-A7E215B6F2E6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Moving_Things.My.MyApplication</StartupObject>
-    <RootNamespace>Moving_Things</RootNamespace>
-    <AssemblyName>Moving Things</AssemblyName>
+    <StartupObject>Lottery_Or_Something.My.MyApplication</StartupObject>
+    <RootNamespace>Lottery_Or_Something</RootNamespace>
+    <AssemblyName>Lottery Or Something</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -20,7 +20,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Moving Things.xml</DocumentationFile>
+    <DocumentationFile>Lottery Or Something.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -30,7 +30,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Moving Things.xml</DocumentationFile>
+    <DocumentationFile>Lottery Or Something.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -70,10 +70,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\VBChapter5\CasadRaces.Designer.vb">
-      <DependentUpon>CasadRaces.vb</DependentUpon>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\VBChapter5\CasadRaces.vb">
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -93,8 +94,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\..\..\VBChapter5\CasadRaces.resx">
-      <DependentUpon>CasadRaces.vb</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -114,36 +115,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\unnamed.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IMG-0247.JPG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IMG-2825.JPG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IMG-3459.JPG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SpeedMaxPC-Racing-Flags.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\happy.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\happy1.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sad.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IMG-3534.GIF" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Safety-Competition-Winner.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
